@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Asignacion4</string>
+    <string name="KilosH">Kilos(X.xx)</string>
+    <string name="EstaturaH">Estatura</string>
+    <string name="BotonCalcular">CALCULAR</string>
+
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:ems="10"
+        android:hint="@string/KilosH"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginBottom="77dp"
+        app:layout_constraintBottom_toTopOf="@+id/weight"
+        app:layout_constraintEnd_toEndOf="@+id/weight"
+        app:layout_constraintStart_toStartOf="@+id/weight"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/user" />
+
+    <TextView
+        android:id="@+id/range"
+        android:layout_width="181dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="99dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imc" />
+
+    <EditText
+        android:id="@+id/height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:hint="@string/EstaturaH"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/calcular"
+        app:layout_constraintStart_toStartOf="@+id/weight"
+        app:layout_constraintTop_toBottomOf="@+id/weight" />
+
+    <TextView
+        android:id="@+id/imc"
+        android:layout_width="177dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="34dp"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/range"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calcular" />
+
+    <Button
+        android:id="@+id/calcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="38dp"
+        android:text="@string/BotonCalcular"
+        app:layout_constraintBottom_toTopOf="@+id/imc"
+        app:layout_constraintEnd_toEndOf="@+id/imc"
+        app:layout_constraintStart_toStartOf="@+id/height"
+        app:layout_constraintTop_toBottomOf="@+id/height" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
